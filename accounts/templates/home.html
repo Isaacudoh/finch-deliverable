@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1 class="display-4">Welcome  to Finch</h1><hr>
+
+<a class="btn-lg btn btn-outline-info" href="{% url 'bird_list' %}">Bird(1-M relation)</a>
+<a class="btn-lg btn btn-outline-info" href="{% url 'bird_family_list' %}">Bird Family(M-M relation)</a>
+
+{% endblock content %}
